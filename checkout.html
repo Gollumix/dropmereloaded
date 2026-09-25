@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="img/siteicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHECKOUT — DROPME.CLOTHING</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body class="checkout-body">
+
+  <!-- Top Announcement Ticker -->
+  <div class="bf-banner">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>ENCRYPTED CHECKOUT</span>
+        <span class="marquee-dot"></span>
+        <span>DISCRETE WORLDWIDE SHIPPING</span>
+        <span class="marquee-dot"></span>
+        <span>ALL PIECES NUMBERED & ARCHIVED</span>
+        <span class="marquee-dot"></span>
+        <span>ALL RAISE FOR ONE BUCH</span>
+        <span class="marquee-dot"></span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>ENCRYPTED CHECKOUT</span>
+        <span class="marquee-dot"></span>
+        <span>DISCRETE WORLDWIDE SHIPPING</span>
+        <span class="marquee-dot"></span>
+        <span>ALL PIECES NUMBERED & ARCHIVED</span>
+        <span class="marquee-dot"></span>
+        <span>ALL RAISE FOR ONE BUCH</span>
+        <span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="checkout-header">
+    <a href="index.html" class="pdp-back-link">
+      <i class="fa-solid fa-arrow-left"></i> <span>RETURN TO SHOP</span>
+    </a>
+
+    <a href="index.html" class="checkout-logo">
+      <img src="img/sitelogo.gif" alt="DROPMEBUCH">
+    </a>
+
+    <div class="checkout-security-badge">
+      <i class="fa-solid fa-shield-halved"></i>
+      <span>256-BIT SECURE GATEWAY</span>
+    </div>
+  </header>
+
+  <!-- Checkout Container -->
+  <main class="checkout-layout">
+
+    <!-- Left Column: Checkout Form -->
+    <form class="checkout-form-col" id="checkoutForm">
+
+      <!-- Step 1: Contact Information -->
+      <div class="checkout-step-block">
+        <h2 class="checkout-step-title">
+          <span class="step-num">1</span>
+          <span>CONTACT INFORMATION</span>
+        </h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address *</label>
+            <input type="email" id="email" class="form-input" placeholder="buch@underground.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number (For Tracking) *</label>
+            <input type="tel" id="phone" class="form-input" placeholder="+48 000 000 000" required autocomplete="tel">
+          </div>
+        </div>
+
+        <label class="form-checkbox-label">
+          <input type="checkbox" class="form-checkbox" checked>
+          <span>Notify me via SMS/Email about exclusive vault drops and secret releases</span>
+        </label>
+      </div>
+
+      <!-- Step 2: Delivery Details -->
+      <div class="checkout-step-block">
+        <h2 class="checkout-step-title">
+          <span class="step-num">2</span>
+          <span>SHIPPING ADDRESS</span>
+        </h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="fname">First Name *</label>
+            <input type="text" id="fname" class="form-input" placeholder="Makar" required autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lname">Last Name *</label>
+            <input type="text" id="lname" class="form-input" placeholder="Kowalski" required autocomplete="family-name">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="country">Country / Region *</label>
+            <select id="country" class="form-select" required autocomplete="country">
+              <option value="PL" selected>Poland (Polska)</option>
+              <option value="DE">Germany (Deutschland)</option>
+              <option value="UK">United Kingdom</option>
+              <option value="US">United States</option>
+              <option value="FR">France</option>
+              <option value="NL">Netherlands</option>
+              <option value="OTHER">Other International</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="city">City *</label>
+            <input type="text" id="city" class="form-input" placeholder="Warszawa" required autocomplete="address-level2">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group" style="flex: 2;">
+            <label class="form-label" for="address">Street Address *</label>
+            <input type="text" id="address" class="form-input" placeholder="ul. Złota 44" required autocomplete="address-line1">
+          </div>
+          <div class="form-group" style="flex: 1;">
+            <label class="form-label" for="zip">Postal Code *</label>
+            <input type="text" id="zip" class="form-input" placeholder="00-120" required autocomplete="postal-code">
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3: Shipping Method -->
+      <div class="checkout-step-block">
+        <h2 class="checkout-step-title">
+          <span class="step-num">3</span>
+          <span>SHIPPING METHOD</span>
+        </h2>
+
+        <div class="selectable-options">
+          <label class="selectable-option selected">
+            <div class="option-left">
+              <input type="radio" name="shippingMethod" class="option-radio" value="courier" checked>
+              <div>
+                <div class="option-name">DPD / InPost Courier Express</div>
+                <div class="option-desc">Estimated delivery: 2-3 business days. Discrete packaging.</div>
+              </div>
+            </div>
+            <div class="option-price" id="shippingMethodPrice">FREE</div>
+          </label>
+
+          <label class="selectable-option">
+            <div class="option-left">
+              <input type="radio" name="shippingMethod" class="option-radio" value="paczkomat">
+              <div>
+                <div class="option-name">InPost Paczkomaty 24/7 (Poland)</div>
+                <div class="option-desc">Collect 24/7 from your preferred parcel locker.</div>
+              </div>
+            </div>
+            <div class="option-price">FREE</div>
+          </label>
+
+          <label class="selectable-option">
+            <div class="option-left">
+              <input type="radio" name="shippingMethod" class="option-radio" value="discrete">
+              <div>
+                <div class="option-name">Underground Priority Courier + Sealed Vault Box</div>
+                <div class="option-desc">Double-sealed matte black anti-tamper security box.</div>
+              </div>
+            </div>
+            <div class="option-price">+10 EUR</div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Step 4: Payment Method -->
+      <div class="checkout-step-block">
+        <h2 class="checkout-step-title">
+          <span class="step-num">4</span>
+          <span>PAYMENT METHOD</span>
+        </h2>
+
+        <div class="selectable-options">
+          
+          <!-- BLIK Option -->
+          <label class="selectable-option selected" id="optBlik">
+            <div class="option-left">
+              <input type="radio" name="paymentMethod" class="option-radio" value="blik" checked>
+              <div>
+                <div class="option-name"><i class="fa-solid fa-bolt" style="color:var(--text-primary); margin-right:6px;"></i> BLIK Fast Pay</div>
+                <div class="option-desc">Instant 6-digit code confirmation in your banking app</div>
+              </div>
+            </div>
+          </label>
+          <div class="payment-details-box active" id="blikBox">
+            <label class="form-label" for="blikCode">Enter 6-digit BLIK Code</label>
+            <input type="text" id="blikCode" class="form-input" placeholder="● ● ●   ● ● ●" maxlength="6" style="letter-spacing:6px; font-size:18px; text-align:center; max-width:240px;">
+          </div>
+
+          <!-- Credit Card Option -->
+          <label class="selectable-option" id="optCard">
+            <div class="option-left">
+              <input type="radio" name="paymentMethod" class="option-radio" value="card">
+              <div>
+                <div class="option-name"><i class="fa-regular fa-credit-card" style="margin-right:6px;"></i> Credit or Debit Card</div>
+                <div class="option-desc">Visa, Mastercard, American Express</div>
+              </div>
+            </div>
+          </label>
+          <div class="payment-details-box" id="cardBox">
+            <div class="form-group" style="margin-bottom:12px;">
+              <label class="form-label">Card Number</label>
+              <input type="text" class="form-input" placeholder="4000 1234 5678 9010" maxlength="19">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Expiration (MM/YY)</label>
+                <input type="text" class="form-input" placeholder="08/28" maxlength="5">
+              </div>
+              <div class="form-group">
+                <label class="form-label">CVV / CVC</label>
+                <input type="password" class="form-input" placeholder="●●●" maxlength="4">
+              </div>
+            </div>
+          </div>
+
+          <!-- Apple Pay / Google Pay -->
+          <label class="selectable-option" id="optDigital">
+            <div class="option-left">
+              <input type="radio" name="paymentMethod" class="option-radio" value="apple_google">
+              <div>
+                <div class="option-name"><i class="fa-brands fa-apple" style="margin-right:6px;"></i> Apple Pay / Google Pay</div>
+                <div class="option-desc">Biometric 1-tap checkout</div>
+              </div>
+            </div>
+          </label>
+
+          <!-- Crypto / Bitcoin -->
+          <label class="selectable-option" id="optCrypto">
+            <div class="option-left">
+              <input type="radio" name="paymentMethod" class="option-radio" value="crypto">
+              <div>
+                <div class="option-name"><i class="fa-brands fa-bitcoin" style="margin-right:6px;"></i> Crypto (BTC / USDT / ETH)</div>
+                <div class="option-desc">Decentralized peer-to-peer settlement</div>
+              </div>
+            </div>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- Submit Order Button -->
+      <button type="submit" class="btn-pay-now" id="checkoutPayBtn">
+        <i class="fa-solid fa-lock"></i>
+        <span id="payBtnLabel">PAY & COMPLETE ORDER • 100 EUR</span>
+      </button>
+
+    </form>
+
+    <!-- Right Column: Order Summary -->
+    <aside class="checkout-summary-col">
+      <h3 class="checkout-summary-title">
+        <span>ORDER SUMMARY</span>
+        <span id="checkoutItemCount" style="color:var(--text-primary); font-family:var(--font-mono); font-size:13px;">0 ITEMS</span>
+      </h3>
+
+      <!-- Items List -->
+      <div class="checkout-items-list" id="checkoutItemsList">
+        <!-- Dynamically injected from localStorage -->
+      </div>
+
+      <!-- Promo Code Box -->
+      <div class="checkout-promo-section">
+        <label class="form-label" for="promoInput">VIP Discount / Drop Code</label>
+        <div class="checkout-promo-wrap">
+          <input type="text" id="promoInput" placeholder="TRY: BUCH10 or SECRET20" autocomplete="off">
+          <button type="button" id="promoApplyBtn">APPLY</button>
+        </div>
+        <div class="promo-message" id="promoMsg"></div>
+      </div>
+
+      <!-- Totals Breakdown -->
+      <div class="checkout-totals-list">
+        <div class="checkout-total-row">
+          <span>Subtotal:</span>
+          <span id="summarySubtotal">0 EUR</span>
+        </div>
+        <div class="checkout-total-row" id="discountRow" style="display:none; color:#66ff88;">
+          <span>VIP Discount:</span>
+          <span id="summaryDiscount">-0 EUR</span>
+        </div>
+        <div class="checkout-total-row">
+          <span>Shipping:</span>
+          <span id="summaryShipping">FREE</span>
+        </div>
+        <div class="checkout-total-row final">
+          <span>Total Due:</span>
+          <span class="total-val" id="summaryTotal">0 EUR</span>
+        </div>
+      </div>
+
+      <!-- Guarantee Perks -->
+      <ul class="checkout-perks-list">
+        <li><i class="fa-solid fa-check" style="color:var(--text-primary); margin-right:8px;"></i> 100% Genuine Hand-Finished Garment</li>
+        <li><i class="fa-solid fa-check" style="color:var(--text-primary); margin-right:8px;"></i> Discrete Matte Black Security Packaging</li>
+        <li><i class="fa-solid fa-check" style="color:var(--text-primary); margin-right:8px;"></i> 14-Day Underground Return Privilege</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- Order Success Modal Backdrop -->
+  <div class="order-success-modal-backdrop" id="orderSuccessModal">
+    <div class="order-success-card">
+      <div class="order-success-icon">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h2 class="order-success-title">ORDER SECURED & ARCHIVED</h2>
+      <div class="order-num-badge" id="successOrderNumber">ORDER #DMB-94812</div>
+      
+      <p class="order-success-text">
+        Your allocation has been locked in our underground vault. 
+        A confirmation dispatch receipt with real-time package tracking has been sent to your email.
+        <br><br>
+        <strong>ALL RAISE FOR ONE BUCH.</strong>
+      </p>
+
+      <a href="index.html" class="btn-order-return">RETURN TO MAIN ARCHIVE</a>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Checkout Logic Script -->
+  <script src="js/checkout.js"></script>
+
+</body>
+</html>

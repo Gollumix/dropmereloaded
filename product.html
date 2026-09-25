@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="img/siteicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pdpPageTitle">C Y P H E R x DROPMEBUCH — DROPME.CLOTHING</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+
+  <!-- Top Announcement Ticker -->
+  <div class="bf-banner">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>COMPLIMENTARY WORLDWIDE SHIPPING OVER 100€</span>
+        <span class="marquee-dot"></span>
+        <span>DROP 002 LIVE</span>
+        <span class="marquee-dot"></span>
+        <span>LIMITED VAULT RUN • NO RESTOCKS</span>
+        <span class="marquee-dot"></span>
+        <span>ALL RAISE FOR ONE BUCH</span>
+        <span class="marquee-dot"></span>
+        <span>BALENCIAGA DARK AESTHETIC</span>
+        <span class="marquee-dot"></span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>COMPLIMENTARY WORLDWIDE SHIPPING OVER 100€</span>
+        <span class="marquee-dot"></span>
+        <span>DROP 002 LIVE</span>
+        <span class="marquee-dot"></span>
+        <span>LIMITED VAULT RUN • NO RESTOCKS</span>
+        <span class="marquee-dot"></span>
+        <span>ALL RAISE FOR ONE BUCH</span>
+        <span class="marquee-dot"></span>
+        <span>BALENCIAGA DARK AESTHETIC</span>
+        <span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Balenciaga Luxury Top Navigation -->
+  <header class="balenciaga-header">
+    <div class="header-left-nav">
+      <button class="header-hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="index.html" class="header-nav-link">← CATALOG</a>
+      <a href="index.html#collection" class="header-nav-link">NEW ARRIVALS</a>
+      <a href="index.html#collection" class="header-nav-link">READY-TO-WEAR</a>
+    </div>
+
+    <!-- Center: Brand Logo -->
+    <div class="header-center-logo">
+      <a href="index.html" class="header-logo-link">
+        <img src="img/sitelogo.gif" alt="DROPMEBUCH" class="header-logo-img">
+      </a>
+    </div>
+
+    <div class="header-right-nav">
+      <a href="index.html" class="header-utility-btn" style="text-decoration: none;">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>SEARCH</span>
+      </a>
+      <button class="header-utility-btn" id="bagBtn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span>BAG</span>
+        <span class="header-bag-count" id="headerBagCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-nav-header">
+      <img src="img/sitelogo.gif" alt="DROPMEBUCH" style="height: 24px;">
+      <button class="mobile-nav-close" id="closeMobileDrawer">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">← ALL PIECES</a></li>
+      <li><a href="product.html?id=cypher">CYPHER TEE</a></li>
+      <li><a href="product.html?id=porntee">CLASSIC P*RN TEE</a></li>
+      <li><a href="product.html?id=skele">CLASSIC SKELE TEE</a></li>
+      <li><a href="checkout.html">CHECKOUT</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <p>© 2026 DROPMEBUCH<br>ALL RAISE FOR ONE BUCH</p>
+    </div>
+  </div>
+
+  <!-- Main Product Detail View -->
+  <main class="pdp-main-wrap">
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="pdp-breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html" class="pdp-back-link"><i class="fa-solid fa-arrow-left"></i> ARCHIVE CATALOG</a>
+      <span class="pdp-bc-sep">/</span>
+      <span>COLLECTION 002</span>
+      <span class="pdp-bc-sep">/</span>
+      <span class="pdp-bc-current" id="pdpBreadcrumbTitle">C Y P H E R x DROPMEBUCH</span>
+    </nav>
+
+    <!-- Product Detail Container -->
+    <section class="pdp-container">
+
+      <!-- Left Column: Gallery with 2.5x Zoom -->
+      <div class="pdp-gallery-col">
+        <div class="pdp-main-image-wrap" id="pdpMainImgWrap">
+          <span class="pdp-view-badge" id="pdpViewBadge">FRONT VIEW</span>
+          <div class="pdp-zoom-hint" id="pdpZoomHint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> <span>2.5X DETAIL ZOOM</span>
+          </div>
+          <div class="pdp-lens" id="pdpLens"></div>
+          <img id="pdpMainImg" src="img/cypherfront.png" alt="Product Image">
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="pdp-thumbs" id="pdpThumbsContainer">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- Right Column: Product Purchasing & Specs -->
+      <div class="pdp-info-col">
+
+        <div class="pdp-header">
+          <span class="pdp-brand-tag" id="pdpBrand">DROPMEBUCH ARTIST EDITION</span>
+          <h1 class="pdp-title" id="pdpTitle">C Y P H E R x DROPMEBUCH</h1>
+          <div class="pdp-price-row">
+            <span class="pdp-price" id="pdpPrice">100 EUR</span>
+            <span class="pdp-tax-note">TAX INCL. • COMPLIMENTARY WORLDWIDE SHIPPING</span>
+          </div>
+        </div>
+
+        <!-- Drop Status Alert -->
+        <div class="pdp-status-card">
+          <span class="pdp-status-dot"></span>
+          <span id="pdpStatusText">IN STOCK • LIMITED RUN OF 50 PIECES • NEVER RESTOCKED</span>
+        </div>
+
+        <!-- Description -->
+        <p class="pdp-desc" id="pdpDesc">
+          Exclusive collaborative garment crafted in independent underground ateliers. 
+          Heavyweight custom blank with double-needle construction and hand-pulled silk screenprints on chest and back.
+        </p>
+
+        <!-- Size Selection Area -->
+        <div class="pdp-size-section">
+          <div class="pdp-size-header">
+            <span class="pdp-size-label">SELECT SIZE</span>
+            <button type="button" class="pdp-size-guide-btn" id="openSizeGuide">[ SIZE SPEC GUIDE ]</button>
+          </div>
+          <div class="pdp-size-pills" id="pdpSizePills">
+            <button type="button" class="pdp-size-pill" data-size="XS">XS</button>
+            <button type="button" class="pdp-size-pill" data-size="S">S</button>
+            <button type="button" class="pdp-size-pill selected" data-size="M">M</button>
+            <button type="button" class="pdp-size-pill" data-size="L">L</button>
+            <button type="button" class="pdp-size-pill" data-size="XL">XL</button>
+          </div>
+        </div>
+
+        <!-- Quantity & Add Button -->
+        <div class="pdp-actions-row">
+          <div class="pdp-qty-wrap">
+            <button type="button" class="pdp-qty-btn" id="qtyMinusBtn" aria-label="Decrease quantity">-</button>
+            <span class="pdp-qty-val" id="qtyDisplay">1</span>
+            <button type="button" class="pdp-qty-btn" id="qtyPlusBtn" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button type="button" class="btn-pdp-add" id="pdpAddBtn">
+            <i class="fa-solid fa-plus"></i> ADD TO BAG
+          </button>
+        </div>
+
+        <!-- Product Accordion -->
+        <div class="pdp-accordion">
+
+          <!-- Item 1: Specs -->
+          <div class="pdp-accordion-item active">
+            <button type="button" class="pdp-accordion-trigger">
+              <span>GARMENT DETAILS & CRAFTSMANSHIP</span>
+              <i class="fa-solid fa-chevron-down pdp-accordion-icon"></i>
+            </button>
+            <div class="pdp-accordion-content">
+              <div class="pdp-accordion-inner">
+                <ul id="pdpSpecsList">
+                  <li>280 GSM Heavyweight 100% Organic French Terry Cotton</li>
+                  <li>Dual-sided artisan screenprint (Chest & Back mural)</li>
+                  <li>Custom garment-dye vintage wash finish</li>
+                  <li>Drop-shoulder boxy silhouette with reinforced rib collar</li>
+                  <li>Individually numbered certification card included</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Sizing -->
+          <div class="pdp-accordion-item">
+            <button type="button" class="pdp-accordion-trigger">
+              <span>FIT & SILHOUETTE GUIDE</span>
+              <i class="fa-solid fa-chevron-down pdp-accordion-icon"></i>
+            </button>
+            <div class="pdp-accordion-content">
+              <div class="pdp-accordion-inner">
+                <p>Oversized streetwear boxy fit with lowered armholes. We recommend ordering your true size for intended relaxed look, or one size down for standard tailored fit.</p>
+                <p style="margin-top:8px;">Model is 185cm / 74kg wearing Size L.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Shipping -->
+          <div class="pdp-accordion-item">
+            <button type="button" class="pdp-accordion-trigger">
+              <span>DISPATCH & WORLDWIDE SHIPPING</span>
+              <i class="fa-solid fa-chevron-down pdp-accordion-icon"></i>
+            </button>
+            <div class="pdp-accordion-content">
+              <div class="pdp-accordion-inner">
+                <p>All items dispatched from central distribution hub within 24-48 business hours.</p>
+                <p style="margin-top:6px;">• Poland / EU: 2-4 business days (Complimentary over 100€)<br>• Worldwide: 4-7 business days via Express Courier</p>
+                <p style="margin-top:6px;">Includes full discrete tracking and 14-day underground return guarantee.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Curated Companion Pieces -->
+    <section class="pdp-related-section">
+      <h2 class="pdp-related-title">CURATED ARCHIVE PIECES</h2>
+      <div class="balenciaga-grid" id="pdpRelatedGrid">
+        <!-- Populated dynamically via JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Luxury Balenciaga Footer -->
+  <footer class="balenciaga-footer">
+    <div class="newsletter-box">
+      <div class="newsletter-title-block">
+        <h3>NEWSLETTER & ARCHIVE ALERTS</h3>
+        <p>Subscribe for confidential drop passwords and private releases.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" id="newsletterEmail" placeholder="ENTER YOUR EMAIL ADDRESS" required autocomplete="email">
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+
+    <div class="footer-bottom-row">
+      <p>© 2026 DROPMEBUCH. ALL RIGHTS RESERVED. ALL RAISE FOR ONE BUCH.</p>
+      <a href="https://instagram.com/dropmebuch" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+        <i class="fa-brands fa-instagram"></i> <span>@DROPMEBUCH</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Slide-over Cart Drawer -->
+  <div class="cart-drawer-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">
+        <span>SHOPPING BAG</span>
+        <span class="cart-drawer-count" id="drawerCartCount">0</span>
+      </h2>
+      <button type="button" class="cart-close-btn" id="cartCloseBtn" aria-label="Close bag">&times;</button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="free-shipping-box">
+      <div class="shipping-text" id="shippingText">
+        <span>Complimentary Shipping over 100€</span>
+        <span id="shippingRemaining">100€ to unlock</span>
+      </div>
+      <div class="shipping-bar-bg">
+        <div class="shipping-bar-fill" id="shippingBarFill"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items List -->
+    <div class="cart-items-list" id="cartItemsContainer">
+      <div class="cart-empty-state" id="cartEmptyState">
+        <i class="fa-solid fa-bag-shopping cart-empty-icon"></i>
+        <p>YOUR BAG IS CURRENTLY EMPTY</p>
+      </div>
+    </div>
+
+    <!-- Cart Footer / Checkout -->
+    <div class="cart-drawer-footer" id="cartFooter">
+      <div class="cart-subtotal-row">
+        <span>SUBTOTAL:</span>
+        <span class="cart-subtotal-val" id="cartSubtotal">0 EUR</span>
+      </div>
+      <button type="button" class="cart-checkout-btn" id="checkoutBtn">PROCEED TO CHECKOUT</button>
+    </div>
+  </aside>
+
+  <!-- Size Guide Modal -->
+  <div class="size-modal-backdrop" id="sizeModalBackdrop">
+    <div class="size-modal">
+      <div class="size-modal-header">
+        <h3 class="size-modal-title">SIZE SPECIFICATION GUIDE</h3>
+        <button type="button" class="size-modal-close" id="closeSizeGuide">&times;</button>
+      </div>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>SIZE</th>
+            <th>CHEST (CM)</th>
+            <th>LENGTH (CM)</th>
+            <th>SHOULDER (CM)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>XS</strong></td>
+            <td>106 cm</td>
+            <td>68 cm</td>
+            <td>50 cm</td>
+          </tr>
+          <tr>
+            <td><strong>S</strong></td>
+            <td>112 cm</td>
+            <td>71 cm</td>
+            <td>52 cm</td>
+          </tr>
+          <tr>
+            <td><strong>M</strong></td>
+            <td>118 cm</td>
+            <td>74 cm</td>
+            <td>54 cm</td>
+          </tr>
+          <tr>
+            <td><strong>L</strong></td>
+            <td>124 cm</td>
+            <td>77 cm</td>
+            <td>56 cm</td>
+          </tr>
+          <tr>
+            <td><strong>XL</strong></td>
+            <td>130 cm</td>
+            <td>80 cm</td>
+            <td>58 cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="size-note">
+        * Measurements taken flat across garment. Allow 1-2 cm tolerance due to custom wash treatment. All pieces pre-shrunk.
+      </p>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Application Logic for PDP -->
+  <script src="js/product.js"></script>
+
+</body>
+</html>
